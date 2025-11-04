@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Login exitoso');
-    window.location.href = 'formularios.html';
+    window.location.href = 'formemployee.html';
   });
 });
 
