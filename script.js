@@ -1,3 +1,16 @@
+// --- FORZAR QUE LA PÁGINA INICIAL SEA login.html ---
+(function() {
+  const filename = location.pathname.substring(location.pathname.lastIndexOf('/') + 1).toLowerCase();
+  // Si no hay nombre de archivo (p. ej. apertura desde la raíz) o es index.html, redirigir.
+  if (!filename || filename === 'index.html' || filename === 'index.htm') {
+    // Evitar bucle si ya estamos en login.html
+    if (!location.href.toLowerCase().includes('login.html')) {
+      // Usar replace para no crear entrada en el historial del navegador
+      location.replace('login.html');
+    }
+  }
+})();
+
 // LOGIN
 document.addEventListener("DOMContentLoaded", () => {
 //   const loginForm = document.getElementById("loginForm");
