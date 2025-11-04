@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing | Pruebas Selenium</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Página de pruebas (Testing)</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Login</a>
+      <a href="formularios.html">Formularios</a>
+      <a href="testing.html">Testing</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BOTÓN CAMBIANTE -->
+    <section>
+      <h2>Botón dinámico</h2>
+      <button id="btnCambiarTexto">Haz clic para cambiar el texto</button>
+    </section>
+
+    <!-- VALIDACIÓN DE CORREO -->
+    <section>
+      <h2>Validación de correo</h2>
+      <input type="email" id="campoEmail" placeholder="Introduce tu correo">
+      <button id="btnValidarEmail">Validar</button>
+      <p id="mensajeEmail"></p>
+    </section>
+
+    <!-- MOSTRAR ELEMENTO OCULTO -->
+    <section>
+      <h2>Mostrar elemento oculto</h2>
+      <button id="btnMostrar">Mostrar mensaje oculto</button>
+      <div id="mensajeOculto" style="display:none;">¡Sorpresa! Ahora me ves 👀</div>
+    </section>
+
+    <!-- TABLA DINÁMICA -->
+    <section>
+      <h2>Tabla dinámica editable</h2>
+      <table id="tablaUsuarios">
+        <thead>
+          <tr>
+            <th>Nombre</th><th>Correo</th><th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Manuel</td><td>manuel@example.com</td><td><button class="editar">Editar</button></td></tr>
+          <tr><td>Laura</td><td>laura@example.com</td><td><button class="editar">Editar</button></td></tr>
+          <tr><td>Pedro</td><td>pedro@example.com</td><td><button class="editar">Editar</button></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- MODAL PRINCIPAL -->
+    <section>
+      <h2>Modal interactivo</h2>
+      <button id="abrirModal">Abrir Modal</button>
+      <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar">&times;</span>
+          <h3>Formulario dentro del modal</h3>
+          <form id="formModal">
+            <label>Nombre:</label>
+            <input type="text" id="modalNombre" required>
+            <label>Correo:</label>
+            <input type="email" id="modalCorreo" required>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Sitio de práctica Selenium</p>
+  </footer>
+</body>
+</html>

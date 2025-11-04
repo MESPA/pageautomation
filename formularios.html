@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios | Pruebas Selenium</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Formularios Interactivos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Login</a>
+      <a href="formularios.html">Formularios</a>
+      <a href="testing.html">Testing</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="formPrueba">
+      <label>Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label>Correo electrónico:</label>
+      <input type="email" id="correo" required>
+
+      <label>Contraseña:</label>
+      <input type="password" id="password" required>
+
+      <label>Dirección:</label>
+      <input type="text" id="direccion">
+
+      <label>Género:</label>
+      <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+      <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+
+      <label>Suscribirse al boletín:</label>
+      <input type="checkbox" id="suscripcion">
+
+      <label>País:</label>
+      <select id="pais">
+        <option value="">Seleccione...</option>
+        <option value="ve">Venezuela</option>
+        <option value="do">República Dominicana</option>
+        <option value="es">España</option>
+      </select>
+
+      <label>Subir archivo:</label>
+      <input type="file" id="archivo">
+
+      <div class="buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 - Sitio de práctica Selenium</p>
+  </footer>
+</body>
+</html>
